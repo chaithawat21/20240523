@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    min-height: 100svh;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.ratingContainer {
+    /* display: none; */
+    background: linear-gradient(0deg, rgb(24,31,39),rgb(34,41,50));
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+
+.starImg {
+    background-color: rgb(39,46,55);
+    padding: .8rem;
+    border-radius: 50%;
+}
+
+.starH {
+    color: var(--White);
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+}
+
+.starP {
+    max-width: 22rem;
+    color: var(--LightGrey);
+    font-weight: 200;
+    line-height: 1.5rem;
+    margin-block: 1rem;
+
+}
+
+.scoreOverall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.score {
+
+    width: 3rem;
+    height: 3rem;
+    color: var(--LightGrey);
+    background-color: rgb(39,46,55);
+    padding-top: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.score:hover {
+    background-color: var(--Orange);
+}
+.scoreToggle {
+    background-color: var(--White);
+}
+
+.btnSub {
+    width: 100%;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 45px;
+    padding: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btnSub:hover {
+    background-color: var(--White);
+}
+
+
+
+/* Thank you container */
+.thankContainer {
+    
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(24,31,39),rgb(34,41,50));
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.totalScore {
+    color: var(--Orange);
+    background-color: rgb(39,46,55);
+    padding-block: .4rem;
+    padding-inline: 1rem;
+    border-radius: 30px;
+    font-size: .8rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+.thankH {
+    color: var(--White);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.thankP {
+    max-width: 22.5rem;
+    color: var(--LightGrey);
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 1rem
+
+}
+
+footer {
+    color: var(--LightGrey);
+    text-align: center;
+    position: relative;
+    bottom: -12rem;
+    
+}
+footer a {
+    color: var(--LightGrey);
+    text-decoration: none;
+}
